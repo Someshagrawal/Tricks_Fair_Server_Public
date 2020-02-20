@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/select_action_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add_noti_button"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Add Notification"
+        android:textSize="29sp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/delete_noti_button"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Delete Notification"
+        android:textSize="28sp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/update_noti_button"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Update Notification"
+        android:textSize="28dp"
+        android:fontFamily="serif"/>
+
+</LinearLayout>

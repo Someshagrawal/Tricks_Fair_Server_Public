@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".update_notification">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/data"
+            android:text="Select type of notification to Update"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+        <Spinner
+            android:id="@+id/chooseNotiTypeUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/notificationShownUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Enter number of notification to update"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/numberToUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:inputType="number"
+            android:hint="5"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:enabled="false"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#363636"
+            android:layout_marginBottom="4dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#363636"
+            android:layout_marginBottom="4dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#363636"
+            android:layout_marginBottom="20dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/headingUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Write Heading of notification"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Remember that Heading can't contains [ ] , . * / ' ~  these characters. DON'T USE THEM !!!"
+            android:textColor="#ff0000"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Heading"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/subHeadingUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Write SubHeading of notification"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <Spinner
+            android:id="@+id/chooseImageUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dialog"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/textViewImageUrlUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Image URL"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/manualImageUrlUpdate"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:hint="Enter manual image url"
+            android:inputType="text"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Url to Open"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/urlToOpenUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Paste Url of Webpage"
+            android:textSize="15sp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:enabled="false"
+            android:text="UPDATE"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

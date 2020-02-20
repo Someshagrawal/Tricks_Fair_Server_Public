@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".add_notification"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Notification"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Notification type"
+            android:paddingBottom="5dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="serif"/>
+        <Spinner
+            android:id="@+id/chooseNotiType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Write Heading of notification"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Remember that Heading can't contains [ ] , . * / ' ~  these characters. DON'T USE THEM !!!"
+            android:textColor="#ff0000"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Heading"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/subHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Write SubHeading of notification"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <Spinner
+            android:id="@+id/chooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dialog"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/textViewImageUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Image URL"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/manualImageUrl"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:hint="Enter manual image url"
+            android:inputType="text"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Url to Open"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/urlToOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Paste Url of Webpage"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"/>
+        <CheckBox
+            android:id="@+id/sendPushNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:text="Send Push Notification"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="SUBMIT"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

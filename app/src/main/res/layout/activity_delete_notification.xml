@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".delete_notification">
+<LinearLayout
+    android:id="@+id/delete_notification_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Notifications"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:fontFamily="serif"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Notification type"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="serif"/>
+
+    <Spinner
+        android:id="@+id/chooseNotiTypeDel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/notificationShown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Enter number of notification to delete "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:fontFamily="serif"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/numberToDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:inputType="number"
+        android:hint="5"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:enabled="false"
+        android:textSize="30sp"
+        android:fontFamily="serif"/>
+
+
+    </LinearLayout>
+</ScrollView>
